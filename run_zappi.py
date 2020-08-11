@@ -284,8 +284,8 @@ class LoopFns():
                 continue
             if zappi.mode != 'Eco+':
                 self.server_conn.set_mode_ecop(zappi.sno)
-            if zappi.min_green_level != 100:
-                self.server_conn.set_green_level(100, zappi.sno)
+            if zappi.min_green_level != 80:
+                self.server_conn.set_green_level(80, zappi.sno)
 
     def _new_power_divert(self):
 
